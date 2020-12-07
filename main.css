@@ -1,0 +1,76 @@
+/**
+ * jhsoft Design
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    margin: 0;
+    background: white;
+    border-bottom: 2px solid #E0E0E0;
+}
+.nav-bar div {
+    padding: 5px;
+    font-size: 25px;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    height: auto;
+    padding: auto;
+}
+.list li {
+    float: left;
+    margin-right: 8px;
+    font-size: 15px;
+}
+.list li a {
+    text-decoration: none;
+    color: black;
+}
+.list li a:hover {
+    text-decoration: underline;
+}
+.main-layout {
+    padding: 5px;
+    margin: 0;
+}
+
+@media (min-width: 720px) {
+    .nav-bar div {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-layout {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 920px) {
+    .nav-bar div {
+        width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-layout {
+        width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
