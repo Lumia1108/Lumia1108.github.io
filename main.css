@@ -11,6 +11,7 @@
 body {
     padding: 0;
     margin: 0;
+    padding-bottom: 30px;
 }
 p {
     padding: 0;
@@ -38,11 +39,11 @@ p {
     margin-right: 8px;
     font-size: 15px;
 }
-.list li a {
+li a {
     text-decoration: none;
     color: black;
 }
-.list li a:hover {
+li a:hover {
     text-decoration: underline;
 }
 .main-layout {
