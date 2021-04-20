@@ -46,6 +46,10 @@ li a {
 li a:hover {
     text-decoration: underline;
 }
+a:visited {
+    text-decoration: none;
+    color: black;
+}
 .main-layout {
     padding: 5px;
     margin: 0;
