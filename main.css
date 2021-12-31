@@ -18,6 +18,10 @@ p {
     padding: 0;
     margin: 0;
 }
+hr {
+    outline: none;
+    border: 1px solid #E0E0E0;
+}
 
 .nav-bar {
     margin: 0;
