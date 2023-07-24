@@ -7,30 +7,18 @@
 
 * {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-    font-weight: lighter;
 }
-body {
+html, body {
     padding: 0;
     margin: 0;
-    padding-bottom: 30px;
 }
-p {
+h1, h2, h3, p {
     padding: 0;
     margin: 0;
 }
 hr {
     outline: none;
     border: 1px solid #E0E0E0;
-}
-
-.nav-bar {
-    margin: 0;
-    background: white;
-    border-bottom: 2px solid #E0E0E0;
-}
-.nav-bar div {
-    padding: 5px;
-    font-size: 25px;
 }
 .list {
     list-style: none;
@@ -55,31 +43,192 @@ a:visited {
     text-decoration: none;
     color: black;
 }
-.main-layout {
-    padding: 5px;
-    margin: 0;
+.img-main {
+    min-height: 300px;
+    background-image: url('assets/img/background2.jpg');
+    background-size: cover;
+    background-position: right center;
+}
+.box {
+    padding: 15px;
+}
+.box-border {
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 15px;
+}
+.box-border .title {
+    background: #EEEEEE;
+    padding: 20px 15px;
+}
+.box-border .text {
+    padding: 20px 15px;
+}
+.grid-profile {
+    display: flex;
+    align-items: center;
+}
+.grid-profile img {
+    width: 80px;
+    margin-right: 15px;
+}
+.grid-about {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row dense;
+}
+.grid-about .content {
+    display: grid;
+    row-gap: 15px;
 }
 
-@media (min-width: 720px) {
-    .nav-bar div {
-        width: 720px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .main-layout {
-        width: 720px;
+.btn-basic {
+    display: block;
+    background: #424242;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.btn-basic:visited {
+    color: white;
+}
+.btn-github {
+    display: block;
+    background: #171515;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.btn-github:visited {
+    color: white;
+}
+.btn-discord {
+    display: block;
+    background: #5865f2;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.btn-discord:visited {
+    color: white;
+}
+.btn-kakao {
+    display: block;
+    background: #FEE500;
+    padding: 10px 15px;
+    color: #191919;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.btn-kakao:visited {
+    color: white;
+}
+.btn-twitter {
+    display: block;
+    background: #00acee;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.btn-twitter:visited {
+    color: white;
+}
+.btn-youtube {
+    display: block;
+    background: #c4302b;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.btn-youtube:visited {
+    color: white;
+}
+.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.tabs li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+.tabs li a {
+    text-decoration: none;
+}
+.tabs .current {
+    font-weight: bold;
+}
+.is_on {
+    display: block;
+}
+.is_off {
+    display: none;
+}
+.text-center {
+    text-align: center;
+}
+.copyright {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #424242;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
         margin-left: auto;
         margin-right: auto;
     }
 }
-@media (min-width: 920px) {
-    .nav-bar div {
-        width: 920px;
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
         margin-left: auto;
         margin-right: auto;
     }
     .main-layout {
-        width: 920px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 0;
+        height: 100vh;
+    }
+    .main-layout .main-text {
+        height: 100%;
+    }
+    .main {
+        height: 100vh;
+    }
+    main {
+        position: fixed;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
         margin-left: auto;
         margin-right: auto;
     }
